@@ -61,7 +61,7 @@ const slugifyFormID = (schema, prefix = "") => {
 		// Return the slugified version of either:
 		return (
 			prefix +
-			(schema.inputName || schema.label || schema.model || "")
+			(schema.inputName || schema.model|| schema.label  || "")
 				// NB: This is a very simple, conservative, slugify function,
 				// avoiding extra dependencies.
 				.toString()
